@@ -14,7 +14,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
   
-  // creating a new Random generator here
+  // Creating a new Random generator here. 
   private Random generator = new Random();
 
 
@@ -40,6 +40,7 @@ public class TorpedoStore {
     boolean success = false;
 
     // simulate random overheating of the launcher bay which prevents firing
+
     double r = generator.nextDouble();
 
     if (r >= FAILURE_RATE) {
